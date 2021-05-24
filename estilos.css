@@ -1,0 +1,100 @@
+body {
+	font-family: 'Raleway', sans-serif; /* Tipo de letra*/
+	color:#333; /* Color del texto*/
+	font-size: 1.2rem; /* Tamaño de texto*/
+	line-height: 1.6em; /* Interlineado del texto*/
+	margin: 0; /Bode de la pagina/
+
+}
+h1{
+	line-height: 1.3em; /Interlineado del H1/
+	font-style: 2rem; /Tamaño del H1/
+}
+p{
+	margin-bottom: 1.6em; /* Margen inferior*/
+}
+
+.container{
+	width: 85%;/acho del navegador/
+	max-width: 850px; /que no se extienda mas de 850px/
+	margin: 0 auto; /0 arriba y abajo y centrado/
+}
+
+.header{
+	background: #333; /Fondo del header/
+	color: white;
+	padding: 0.8rem 0;
+}
+
+.header a {
+	color:white; /Color de los enlaces/
+	text-decoration: none; /Eliminar el subrayado/
+	padding: 2rem 0; /relleno/
+}
+
+.logo-nav-container{
+	display: flex; /Que los elementos una a la izq y otro a la derecha/
+	justify-content: space-between; /que se separen/
+	align-items: center;/hacer que queden centrados/
+	flex-wrap: wrap;
+}
+
+.logo{
+	letter-spacing: 15px;
+	font-size: 1.4em;
+}
+
+
+.navigation	ul{
+	margin: 0;
+	padding: 0;
+	list-style: none; /quitarle los puntos de lista/
+}
+
+
+	.navigation	ul li {
+		display: inline-block;
+
+	}
+
+		.navigation	ul li a {
+			display: block; /que los elementos queden uno a lado del otro/
+			padding: 0.5rem 1rem; /que los elementos se separen/
+			transition: all 0.4s linear;
+
+			border-radius: 5px;
+		}
+
+		.navigation	ul li a:hover{
+			background: #4a4a4a;
+		}
+
+.main{
+	margin-top: 10rem;
+}
+.fondo{
+	height: 900px;
+	position: relative;
+	background-image: url(imagenes/fondo.png);
+	overflow: hidden;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 130px;
+}
+.sesgoabajo-unico{
+	z-index: 10;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-width: 0 0 35vh 100vw;
+	border-style: solid;
+}
+.titulo-patrocinadores,
+.subtilulo-patrocinadores{
+color: #fff;
+text-align: center;
+}
+.titulo-patrocinadores{
+	font-size: 56px;
+	margin-top: 48px;
+}
